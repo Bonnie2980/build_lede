@@ -13,10 +13,10 @@ on:
   workflow_dispatch:
 
 env:
-  REPO_URL: https://github.com/Heleguo/lede.git
-  REPO_BRANCH: master
+  REPO_URL: https://github.com/vb1980/mtk_lede.git
+  REPO_BRANCH: mt7915_mtwifi
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: config/heleguo_cr660x_lede.config
+  CONFIG_FILE: config/xiaomi_mi-router_cr660x_lede.config
   DIY_P1_SH: script/diy-part1.sh
   DIY_P2_SH: script/diy-part2_heleguo_xiaomi_cr660x_lede.sh
   UPLOAD_BIN_DIR: true
