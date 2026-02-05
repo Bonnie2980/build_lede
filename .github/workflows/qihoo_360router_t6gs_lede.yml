@@ -59,6 +59,7 @@ jobs:
     
     - name: Freeing up disk space
       uses: easimon/maximize-build-space@master
+      if: false # TODO wait for https://github.com/easimon/maximize-build-space/issues/58
       with: 
         root-reserve-mb: 2048
         swap-size-mb: 1
