@@ -18,7 +18,7 @@ env:
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: config/qihoo_360router_t6gs_lede.config
   DIY_P1_SH: script/diy-part1.sh
-  DIY_P2_SH: script/diy-part2_qihoo_360router_t6gs.sh
+  DIY_P2_SH: script/diy-part2_qihoo_360router_t6gs_lede.sh
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
   TZ: Asia/Shanghai
@@ -59,6 +59,7 @@ jobs:
     
     - name: Freeing up disk space
       uses: easimon/maximize-build-space@master
+      if: false # TODO wait for https://github.com/easimon/maximize-build-space/issues/58
       with: 
         root-reserve-mb: 2048
         swap-size-mb: 1
