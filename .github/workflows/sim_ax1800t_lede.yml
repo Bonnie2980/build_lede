@@ -58,7 +58,7 @@ jobs:
         os_swap: "True"
     
     - name: Freeing up disk space
-      uses: easimon/maximize-build-space@master
+      uses: smallprogram/maximize-build-space@master
       with: 
         root-reserve-mb: 2048
         swap-size-mb: 1
